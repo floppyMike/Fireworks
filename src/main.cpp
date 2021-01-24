@@ -4,7 +4,7 @@
 
 using namespace ctl;
 
-int main()
+int main(int argc, char** argv)
 {
 	sdl::SDL s;
 

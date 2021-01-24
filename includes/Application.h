@@ -94,7 +94,7 @@ public:
 
 	void reset()
 	{
-		m_spot = { g_rand.rand_number(m_win->dim().w / 4.F, m_win->dim().w * 3 / 4.F), m_win->dim().h };
+		m_spot = { g_rand.rand_number(m_win->dim().w / 4.F, m_win->dim().w * 3 / 4.F), (float)m_win->dim().h };
 		m_attrib.reset(g_rand.rand_number(-.5F, .5F), g_rand.rand_number(2.F, 3.5F));
 		m_pack.reset();
 	}
