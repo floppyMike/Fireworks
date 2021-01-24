@@ -6,6 +6,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 find_package(SDL2 REQUIRED)
 
 add_subdirectory("CustomLibrary")
+include_directories(${SDL2_INCLUDE_DIR})
 link_libraries(CustomLibrary ${SDL2_LIBRARY})
 
 add_executable(${PROJECT_NAME} src/main.cpp)
